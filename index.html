@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiphop5782/js@0.0.6/typing/hakademy-typing.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hiphop5782/js@0.0.6/typing/hakademy-typing.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,500;0,900;1,700&display=swap" rel="stylesheet">
+    <link href="assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <title>AN HYO IN</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <h1>HYOIN's Web Portfolio</h1>
+            <h2>hyoin1105@kakao.com</h2>
+        </div>
+        
+    </header>
+    <div id="main" class="main">
+        <img src="assets/images/main.png" alt="메인배너이미지" class="main_img">
+        <div class="main_txt">
+            <h1>새로운 도전을 즐기니까.</h1>
+            <h1>좋아하는 일인만큼 나답게 할거니까.</h1>
+            <span class="typing"></span>
+        </div>
+
+        <div class="section">
+            <div class="section__title">
+                <h3>2020</h3>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="section__content">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+<!-- 타이핑 효과 스크립트 -->
+<script>
+    window.addEventListener("load", function(){
+    var tag = document.querySelector(".typing");
+    var app = new Hakademy.util.typing(tag, {
+        text:[
+            "책임감을 가지고 함께 일할 때 협업을 통해 시너지를 주는 팀원이 필요할 때",
+            "긍정적인 자세로 팀 분위기를 상기시켜줄 팀원이 필요할 때",
+            "좋아하는 일을 잘하고 싶어하는 열정을 가진 팀원이 필요할 때",  
+        ],
+        color:{
+            apply:true,
+            list:[
+            "#333",
+            "#333",
+            "#333",
+        ],
+        index:0,
+        }
+    });
+
+    var defaultOptions = {
+    text:[
+        "I'm hyoin!"
+    ],
+    appear:{
+        startDelay:0.1,
+        processDelay:0.1,
+        finishDelay:0.1,
+    },
+    exit:{
+        startDelay:0.1,
+        processDelay:0.1,
+        finishDelay:0.1,
+        exitDelay:0.1
+    },
+    cycle:"infinite",
+    cursor:{
+        display:true,
+        flicker:true,
+    },
+    
+};
+});
+</script>
+</html>

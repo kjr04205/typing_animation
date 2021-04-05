@@ -1,0 +1,25 @@
+#header{position:fixed; width:100%; max-width:1920px; margin:0 auto; z-index:999; padding:10px 20px; display:none;}
+#header div{display:inline-block; vertical-align: middle;}
+#header div h1, #header div h2{color:#333; font-family: 'Source Code Pro', monospace;}
+#header div{width:100%;}
+.fixed{background:#fff; padding:5px 20px !important; display:block !important; animation: fixed 0.5s ease-in;}
+header.fixed div h1{font-size:25px; font-weight:700; letter-spacing:1px;}
+header.fixed div h2{font-size:17px; font-weight:500; letter-spacing:1px;}
+
+.main{padding:100px 20px;}
+.main_img{position:absolute; max-width:1920px; width:100%; left:0; top:0; object-fit: cover; height:100%;}
+.main_txt{position:absolute; padding:0 20px; font-size:20px; left:50%; top:50%; transform: translate(-50%, -50%); width:50%; text-align:center;}
+.main_txt h1{font-size:40px;}
+.typing{font-size:30px; letter-spacing:-0.9px; font-weight:600;}
+@media screen and (max-width: 1280px){
+    .main_txt{width:80%;}
+}
+
+@media screen and (max-width: 768px){
+    header.fixed div h1{font-size:20px; font-weight:700; letter-spacing:1px;}
+    header.fixed div h2{font-size:14px; font-weight:500; letter-spacing:1px;}
+    
+    .main_txt{width:90%;}
+    .main_txt h1{font-size:25px;}
+    .typing{font-size:15px;}
+}
